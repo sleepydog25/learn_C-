@@ -176,4 +176,27 @@ int main() {
     return 0;
 }
 ```
-7. 
+7. [Pointer](https://www.hackerrank.com/challenges/c-tutorial-pointer/problem?isFullScreen=true)
+```cpp
+#include <stdio.h>
+#include <stdlib.h>
+
+void update(int *a,int *b) {
+    int sum = *a + *b;
+    int diff = abs(*a - *b);
+    *a = sum;
+    *b = diff;
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+
+    return 0;
+}
+```
+8. 
