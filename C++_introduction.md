@@ -209,4 +209,69 @@ p == &x
 *p == 10  
 
 8. (Array introduction) [https://www.hackerrank.com/challenges/arrays-introduction/problem?isFullScreen=true]
+```cpp
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int size;
+    cin >> size;
+
+    int arr[size];
+
+    for (int i = 0; i < size; i++) {
+        cin >> arr[i];
+    }
+
+    for (int k = size - 1; k >= 0; k--) {
+        cout << arr[k] << " ";
+    }
+
+    return 0;
+}
+
+```
 9. (Variable Sized Arrays) [https://www.hackerrank.com/challenges/variable-sized-arrays/problem?isFullScreen=true]
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    int n;  // number of arrays
+    int q;  // number of queries
+    cin >> n >> q;
+
+    // store variable-length arrays
+    vector<vector<int>> arrays(n);
+
+    for (int i = 0; i < n; i++) {
+        int len;  // length of the i-th array
+        cin >> len;
+
+        arrays[i].resize(len);
+
+        for (int j = 0; j < len; j++) {
+            cin >> arrays[i][j];
+        }
+    }
+
+    // process queries
+    for (int k = 0; k < q; k++) {
+        int arrayIndex;
+        int elementIndex;
+        cin >> arrayIndex >> elementIndex;
+
+        cout << arrays[arrayIndex][elementIndex] << "\n";
+    }
+
+    return 0;
+}
+
+```
