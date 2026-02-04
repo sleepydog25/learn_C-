@@ -29,4 +29,23 @@ int main() {
     return 0;
 }
 ```
-3. 
+3. [Basic Data Types](https://www.hackerrank.com/challenges/c-tutorial-basic-data-types/problem?isFullScreen=true)
+```cpp
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(){
+    int firstInput;
+    long secondInput;
+    char thirdInput;
+    float fourthInput;
+    double fifthInput;
+    
+    scanf("%d %ld %c %f %lf", &firstInput, &secondInput, &thirdInput, &fourthInput,&fifthInput);
+    
+    printf("%d\n%ld\n%c\n%f\n%lf", firstInput, secondInput, thirdInput, fourthInput, fifthInput);
+    return 0;
+}
+```
+4. 
