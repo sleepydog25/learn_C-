@@ -208,7 +208,7 @@ if x = 10
 p == &x 
 *p == 10  
 
-8. (Array introduction) [https://www.hackerrank.com/challenges/arrays-introduction/problem?isFullScreen=true]
+8. (Array introduction)[https://www.hackerrank.com/challenges/arrays-introduction/problem?isFullScreen=true]
 ```cpp
 #include <cmath>
 #include <cstdio>
@@ -236,7 +236,7 @@ int main() {
 }
 
 ```
-9. (Variable Sized Arrays) [https://www.hackerrank.com/challenges/variable-sized-arrays/problem?isFullScreen=true]
+9. (Variable Sized Arrays)[https://www.hackerrank.com/challenges/variable-sized-arrays/problem?isFullScreen=true]
 ```cpp
 #include <iostream>
 #include <vector>
