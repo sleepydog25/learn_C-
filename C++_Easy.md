@@ -525,4 +525,33 @@ int main()
 	check2();
 }
 ```
-12. 
+12. [Sets-STL](https://www.hackerrank.com/challenges/cpp-sets/problem?isFullScreen=true)
+```cpp
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <set>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int q, t, x;
+    cin >> q;
+    
+    set<int> s;
+    
+    while (q--){
+        cin >> t >> x;
+        
+        if (t == 1 )s.insert(x);
+        else if (t == 2) s.erase(x);
+        else cout << (s.count(x)?"Yes":"No") << "\n";
+    }
+    
+      
+    return 0;
+}
+```
+13. 
