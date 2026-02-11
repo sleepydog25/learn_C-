@@ -718,5 +718,34 @@ int main()
     return 0;
 }
 ```
-16. 
+16. [Print Pretty](https://www.hackerrank.com/challenges/prettyprint/problem?isFullScreen=true)
+```cpp
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+
+int main() {
+	int T; cin >> T;
+	cout << setiosflags(ios::uppercase);
+	cout << setw(0xf) << internal;
+	while(T--) {
+		double A; cin >> A;
+		double B; cin >> B;
+		double C; cin >> C;
+        
+            cout <<left << nouppercase<<showbase<<hex<< (long)A << "\n";
+            
+            if (B>=0){
+                cout <<right<< setfill('_')<<setw(15)<< showpos<<fixed<<setprecision(2)<<B<<"\n"<<noshowpos;
+            }else{
+                cout<<right << setfill('_')<<setw(15)<<fixed<<setprecision(2)<<B<<"\n";
+            }
+            
+            cout <<uppercase<<scientific<<setprecision(9)<<C<<"\n";
+
+	}
+	return 0;
+
+}
+```  
 17. 
