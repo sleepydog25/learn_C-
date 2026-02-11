@@ -656,4 +656,67 @@ int main () {
   return 0;
 }
 ```
-15. 
+15. [Rectangle Area](https://www.hackerrank.com/challenges/rectangle-area/problem?isFullScreen=true)
+```cpp
+#include <iostream>
+
+using namespace std;
+class Rectangle
+{
+protected:
+    int height;
+    int width;
+
+public:
+    void read_input()
+    {
+        cin >> width >> height;
+    }
+
+    void display()
+    {
+        cout << width << " " << height << "\n";
+    }
+};
+
+
+class RectangleArea : public Rectangle
+{
+public:
+    RectangleArea() = default;
+
+    void display()
+    {
+        cout << 1LL * width * height;
+    }
+};
+
+
+
+int main()
+{
+    /*
+     * Declare a RectangleArea object
+     */
+    RectangleArea r_area;
+    
+    /*
+     * Read the width and height
+     */
+    r_area.read_input();
+    
+    /*
+     * Print the width and height
+     */
+    r_area.Rectangle::display();
+    
+    /*
+     * Print the area
+     */
+    r_area.display();
+    
+    return 0;
+}
+```
+16. 
+17. 
